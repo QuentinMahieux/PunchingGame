@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcbcb7898e76efa4faf3d9ac04058b01, type: 3}
   m_Name: playerArmData
   m_EditorClassIdentifier: Assembly-CSharp::ArmData
+  id: 0
   speed: 12.1
   time: 0.2
+  force: 1.51
+  timeForce: 0.67
   tag: Enemy
   damage: 4

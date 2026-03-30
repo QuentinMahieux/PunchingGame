@@ -8,7 +8,6 @@ public class ArmBehaviour : MonoBehaviour
     public Transform target;
     public Transform defaultPosition;
 
-    public Rigidbody rb;
     
     [Header("State")]
     public bool isPunching;
@@ -29,9 +28,11 @@ public class ArmBehaviour : MonoBehaviour
 
     protected virtual void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Touche truc");
         if (other.CompareTag(data.tag) && isPunching)
         {
-            FightBehaviour cible =  other.GetComponent<FightBehaviour>();
+            Debug.Log("Touche un enemie");
+            DefaultEnemy cible = other.GetComponent<DefaultEnemy>();
             cible.Hit(data.damage);
         }
     }

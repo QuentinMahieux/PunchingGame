@@ -3,6 +3,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    [Header("Cursor")] 
+    public bool isVisible = true;
+    public CursorLockMode cursorLockMode = CursorLockMode.Confined;
     void Awake()
     {
         if (!instance)
@@ -18,8 +22,8 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = isVisible;
+        Cursor.lockState = cursorLockMode;
     }
 
     void Update()

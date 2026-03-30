@@ -15,5 +15,7 @@ MonoBehaviour:
   id: 1
   speed: 17.95
   time: 1.25
+  force: 8.89
+  timeForce: 0.2
   tag: Enemy
   damage: 8.59

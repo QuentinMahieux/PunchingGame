@@ -7,6 +7,8 @@ public class ArmData : ScriptableObject
     [Header("Punch")]
     public float speed = 5f;
     public float time = 0.5f;
+    public float force = 3f;
+    public float timeForce = 0.2f;
 
     [Header("Enemy")] 
     public string tag;

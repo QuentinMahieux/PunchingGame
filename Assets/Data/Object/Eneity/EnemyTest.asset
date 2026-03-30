@@ -15,3 +15,6 @@ MonoBehaviour:
   entityName: Player
   maxHealth: 10
   speed: 3
+  distanceToPurchace: 14
+  distanceToWait: 6
+  distanceToPush: 2
